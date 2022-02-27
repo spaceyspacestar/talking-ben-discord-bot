@@ -36,7 +36,7 @@ client.on('messageCreate', async message => {
             else {
                 let response = ['Uuuggghhhh...', 'Ho ho ho..!', 'No.', 'Yeeesss.', '...'];
                 let answer = (Math.floor(Math.random() * Math.floor(response.length)));
-                if (answer === 4){ //Aka the "..." reponse, don't reset the counter
+                if (answer === 4){ //Aka the "..." reponse, don't reset timer
                     message.channel.send({content: response[answer]});
                 }  
                 else {
